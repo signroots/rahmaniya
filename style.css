@@ -1,0 +1,63 @@
+/* Background & layout */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+    font-family: "Karla", sans-serif;
+  color: #000000;
+  background: url('bg-img.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+/* Content section */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+}
+
+.logo img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+h1 {
+     font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+p.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #080000;
+  z-index: 1;
+}
+
+footer a {
+  color: #012d3b;
+  text-decoration: none;
+}
