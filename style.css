@@ -1,77 +1,74 @@
-/* Background & layout */
-body {
+/* Reset and layout */
+* {
   margin: 0;
-  padding: 40px 0 20px; /* top 40px padding, bottom 20px */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   height: 100vh;
-  font-family: "Karla", sans-serif;
-  color: #000000;
+  font-family: "Fira Sans", sans-serif;
   background: url('bg-img.jpg') center center / cover no-repeat;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
-  justify-content: flex-start; /* start at top */
+  overflow: hidden;
 }
 
-
-/* Content section */
+/* Content wrapper */
 .content {
-  position: relative;
-  z-index: 1;
-  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 90%;
 }
 
+/* Logo */
 .logo img {
-  width: 400px;
+  width: 350px;
   height: auto;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
+/* Optional heading */
 h1 {
-     font-family: "Fira Sans", sans-serif;
+  font-size: 2.5rem;
   font-weight: 500;
-  font-style: normal;
-  font-size: 3.5rem;
-  margin-bottom: 30px;
+  margin: 10px 0;
 }
 
-p.subtitle {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
-
+/* Contact Info */
 .contact-info {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin: 10px 0;
+}
+
+/* Facebook Icon */
+.facebook-icon {
+  display: inline-block;
+  font-size: 28px;
+  margin-top: 8px;
+  color: #3b5998;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.facebook-icon:hover {
+  transform: scale(1.1);
+  color: #1d305e;
 }
 
 /* Footer */
 footer {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
   font-size: 0.85rem;
-  color: #080000;
-  z-index: 1;
+  color: #000;
+  margin-top: 200px; 
 }
 
 footer a {
   color: #012d3b;
   text-decoration: none;
-}
-
-.contact-info a.facebook-icon {
-  display: inline-block;
-  margin-top: 10px;
-  color: #3b5998;
-  font-size: 32px;  
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.contact-info a.facebook-icon:hover {
-  color: #1d305e;
-  transform: scale(1.1);
 }
