@@ -66,6 +66,19 @@ h1 {
   transform: scale(1.1);
   color: #1d305e;
 }
+.instagram-icon {
+  display: inline-block;
+  font-size: 28px;
+  margin-top: 8px;
+  color: #e4405f; /* Instagram brand color */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.instagram-icon:hover {
+  transform: scale(1.1);
+  color: #c13584; /* Darker hover tone */
+}
+
 
 /* Footer */
 footer {
