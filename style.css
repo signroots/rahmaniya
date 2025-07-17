@@ -51,64 +51,101 @@ h1 {
   line-height: 1.6;
   margin: 10px 0;
   max-width: 90%;
-  color: #000;
   text-align: center;
 }
 
-/* Social Icons wrapper */
+/* Social Icons Container */
 .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between icons */
   margin-top: 10px;
 }
 
 /* Facebook Icon */
 .facebook-icon {
-  display: inline-block;
   font-size: 28px;
-  margin-right: 16px;
   color: #3b5998;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .facebook-icon:hover {
   transform: scale(1.1);
-  color: #1d305e;
+  color: #3b5998;
 }
 
 /* Instagram Icon */
 .instagram-icon {
-  display: inline-block;
   font-size: 28px;
-  color: #f56040; /* Instagram brand base */
+  color: #f56040;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .instagram-icon:hover {
   transform: scale(1.1);
-  color: #c13584;
+  color: #f56040;
 }
 
-/* Responsive: Tablet */
+
+/* Footer */
+footer {
+  font-size: 0.85rem;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #012d3b;
+  text-decoration: none;
+}
+
+/* Responsive view for Tablet */
 @media (max-width: 768px) {
+  .logo img {
+    width: 250px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
   .contact-info {
     font-size: 0.95rem;
   }
 
-  .facebook-icon,
+  .facebook-icon {
+    font-size: 24px;
+  }
   .instagram-icon {
     font-size: 24px;
-    margin-right: 12px;
-  }
 }
-
-/* Responsive: Mobile */
+}
+/* Mobile */
 @media (max-width: 480px) {
+  .logo img {
+    width: 200px;
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
   .contact-info {
     font-size: 0.9rem;
   }
 
-  .facebook-icon,
+  .facebook-icon {
+    font-size: 22px;
+  }
+
   .instagram-icon {
     font-size: 22px;
-    margin-right: 10px;
+  }
+
+  footer {
+    font-size: 0.75rem;
   }
 }
